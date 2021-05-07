@@ -19,7 +19,7 @@ int main()
 	while (true)
 	{
 		cout << "Введите сообщение(только латиница)" << endl;
-		cin.ignore();
+		
 		cin.getline(mes, MESS_LENGTH);
 		cout << "Введите ключ шифра(от 1 до 25)" << endl;
 		cin >> key;
@@ -80,6 +80,7 @@ int main()
 			mesCoded[i] = 0;
 			mesDecoded[i] = 0;
 		}
+		cin.ignore();
 	}
 }
 
